@@ -1,0 +1,84 @@
+{
+  "roadMap": {
+    "phase1": [
+      " Lock 50% Of Tokens For 6 Months.",
+      "Burn 10% + Of Total Supply.",
+      "Identify Potential Partners For Early Collaboration.",
+      "Create A Strong, Collaborative, Including Community. ",
+      "Publish A Litepaper."
+    ],
+    "phase2": [
+      " Launch A New User-Friendly Website.",
+      " Optimize The Project's Metrics For CoinMarketCap.",
+      "Apply For Listings On Both Platforms. ",
+      " Finalize Website's Look To Align With Brand Image. ",
+      "Peparation Of Marketing Campagne For Phase 3."
+    ],
+    "phase3": [
+      " Increase Liquidity Pool Through Incentives",
+      " Boost Trading Volume With Reward Programs.",
+      "Launch 'Burning Or Gold' Marketing Campaign.",
+      "  Encourage Organic Community Growth. "
+    ],
+    "phase4": [
+      " Prepare For Listing On A Reputable Crypto Exchange.",
+      " Design And Launch ArabPepe Merchandise.",
+      "Use Exchange Listing To Attract New Investors. ",
+      "  Create A New Roadmap For The Next Phase Based On Feedback. "
+    ]
+  },
+  "downloadProfilePics": {
+    "pics": [
+      {
+        "pic": "/Assets/ProfilePics/pic1.png",
+        "route": "https://www.arabpepe.com/gallery/png-01.png"
+      },
+      {
+        "pic": "/Assets/ProfilePics/pic2.png",
+        "route": "https://www.arabpepe.com/gallery/png-02.png"
+      },
+      {
+        "pic": "/Assets/ProfilePics/pic3.png",
+        "route": "https://www.arabpepe.com/gallery/png-03.png"
+      },
+      {
+        "pic": "/Assets/ProfilePics/pic4.png",
+        "route": "https://www.arabpepe.com/gallery/png-04.png"
+      }
+    ]
+  },
+  "Tokenomics":{
+    "tokenList" : [
+        {
+          "title": "Network",
+          "text": "Binance Smart Chain(BSC-BEP20)"
+        },
+        {
+          "title": "Token Symbol",
+          "text": "$APEPE"
+        },
+        {
+          "title": "Token Supply",
+          "text": "100,100,100,100,100"
+        },
+        {
+          "title": "Initial liquidity",
+          "text": "80,080,080,808,080"
+        },
+        {
+          "title": "Contract",
+          "text": "Renounced Ownership"
+        },
+        {
+          "title": "LP Lock",
+          "text": "Visit CoinScope",
+          "link": "https://www.coinscope.co/lockers/token/0xc47672cd8f50Ae03156684cB523B1ED4BB349f2F"
+        },
+        {
+          "title": "Token Locks",
+          "text": "Visit CoinScope",
+          "link": "https://www.coinscope.co/lockers/token/0xc47672cd8f50Ae03156684cB523B1ED4BB349f2F"
+        }
+      ]
+  }
+}
