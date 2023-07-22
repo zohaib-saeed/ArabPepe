@@ -7,7 +7,7 @@ const TradingChart = () => {
     <Wrapper id={"tradeChart"} style="py-16 lg:min-h-[100vh]">
       <div className="w-full h-full flex flex-col items-center justify-start gap-10">
         <Heading text="Arab Pepe to USD Chart" style={"text-center"} />
-        <div className="w-full h-[500px]">
+        <div className="w-full h-[800px]">
           <iframe
             height="100%"
             width="100%"

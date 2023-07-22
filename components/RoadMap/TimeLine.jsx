@@ -56,6 +56,8 @@ const TimeLine = () => {
         <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot />
             <TimelineConnector className="" />
+            <TimelineDot />
+
           </TimelineSeparator>
           <TimelineContent>
             <MapCard
@@ -63,7 +65,10 @@ const TimeLine = () => {
               options={Data.roadMap.phase4}
             />
           </TimelineContent>
+          
+
         </TimelineItem>
+        
       </Timeline>
     </div>
   );

@@ -88,7 +88,7 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .MuiTimelineConnector-root {
@@ -96,7 +96,7 @@ canvas {
   border: 2px solid rgb(188, 184, 184);
   background: none !important;
   height: 160px !important;
-} 
+}
 
 .MuiTimelineContent-root {
   padding: 0px 16px;
@@ -132,7 +132,6 @@ canvas {
   display: flex !important;
   align-items: flex-start !important;
 }
-
 
 .MuiTimelineItem-positionRight:before {
   content: none !important;

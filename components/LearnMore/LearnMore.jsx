@@ -7,7 +7,7 @@ import Cube from "./Cube";
 
 const LearnMore = () => {
   return (
-    <Wrapper id="learnMore" style="py-16 lg:min-h-[100vh]">
+    <Wrapper id="learnMore" style="py-16 ">
       <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8 overflow-hidden">
         <div className="w-full overflow-hidden">
           <Canvas

@@ -11,7 +11,7 @@ const Tokenomics = () => {
 
   return (
     <div className="w-full flex items-center justify-center">
-      <div className="w-full flex flex-col items-center lg:items-start justify-start gap-6">
+      <div className="w-full flex flex-col items-center lg:items-start justify-start gap-6 ">
         <Heading text="Tokenomics" />
         {tokenList.map((item, index) => {
           return (
