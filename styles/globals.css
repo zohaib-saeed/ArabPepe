@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backgroundGradient {
+  background: rgb(2, 1, 7);
+  background: linear-gradient(
+    159deg,
+    rgba(2, 1, 7, 1) 0%,
+    rgba(42, 6, 94, 1) 33%
+  );
+}
+
+.backgroundGradientLeftToRight {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    338deg,
+    rgba(2, 0, 36, 1) 2%,
+    rgba(42, 6, 94, 1) 30%
+  );
+}
+
+.bg_gradient {
+  background: rgb(199, 18, 127);
+  background: linear-gradient(
+    159deg,
+    rgba(199, 18, 127, 1) 0%,
+    rgba(42, 6, 94, 1) 95%
+  );
+}
+
+.bg_gradient:hover {
+  background: rgb(42, 6, 94);
+  background: linear-gradient(
+    159deg,
+    rgba(42, 6, 94, 1) 0%,
+    rgba(199, 18, 127, 1) 95%
+  );
+}
+
+canvas {
+  width: 100%;
+  height: 400px;
+}
+
+.outlinedText {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 700;
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.outlinedText::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(226, 150, 163);
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.outlinedText:hover::after {
+  animation: fillText 0.5s linear both;
+}
+
+/* styles for mui timeline */
+.MuiTimeline-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiTimelineItem-root {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+.MuiTimelineSeparator-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.MuiTimelineConnector-root {
+  width: 1px;
+  border: 2px solid rgb(188, 184, 184);
+  background: none !important;
+  height: 160px !important;
+}
+
+.MuiTimelineContent-root {
+  padding: 0px 16px;
+  width: 100%;
+  display: flex;
+}
+
+.MuiTimeline-positionAlternate
+  .MuiTimelineContent-positionAlternate:nth-of-type(even) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+}
+.MuiTimeline-positionAlternate
+  .MuiTimelineContent-positionAlternate:nth-of-type(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.MuiTimeline-positionAlternate
+  li:nth-of-type(even)
+  .MuiTimelineContent-positionAlternate {
+  justify-content: flex-end;
+}
+
+.MuiTimelineContent-positionAlternate {
+  margin-top: 14px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.MuiTimelineItem-positionRight:before {
+  content: none !important;
+}
+
+.MuiTimeline-positionRight .MuiTimelineConnector-root {
+  width: 0px;
+
+  background: none;
+  height: 170px;
+}
+
+/* Positioned left timeline customization */
+.MuiTimelineItem-positionLeft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.MuiTimelineItem-positionLeft:before {
+  content: none !important;
+}
+
+.MuiTimeline-positionLeft .MuiTimelineContent-root {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px 8px;
+}
+
+.MuiTimeline-positionLeft .MuiTimelineConnector-root {
+  width: 0px;
+  border-left: 4px dashed #164f18 !important;
+  background: none !important;
+  height: 77px !important;
+}
+
+.MuiTimelineContent-positionRight {
+  margin-top: 18px !important;
+}
+.MuiTimelineContent-positionLeft {
+  padding: 0px 8px !important;
+}
+
+@keyframes fillText {
+  to {
+    width: 100%;
+  }
+}
+
+.bounce {
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .outlinedText {
+    font-size: 28px;
+  }
+}
