@@ -5,50 +5,18 @@ import Heading from "../shared/Typography/Heading";
 import { TbSquareRoundedChevronRightFilled } from "react-icons/tb";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaCopy, FaWallet, FaMoneyBill } from "react-icons/fa";
-import Snackbar from "@mui/material/Snackbar";
+import { BsCheck2 } from "react-icons/bs";
 import Tooltip from "@mui/material/Tooltip";
 
 const BuyApepe = () => {
-  const [openTooltip, setOpenTooltip] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  const handleClick = () => {
-    setOpenSnackbar(true);
-  };
-
-  const handleCloseSnackbar = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-
-    setOpenSnackbar(false);
-  };
-
-  const handleClose = () => {
-    setOpenTooltip(false);
-  };
-
-  const handleOpen = () => {
-    setOpenTooltip(true);
-  };
-
-  function copyToClipboard() {
-    navigator.clipboard.writeText("abc@gmail.com");
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("0x98a2500a2c3b8877b0ed5ac3acc300c50bf7064b");
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
     }, 2000);
-
-    handleClick();
-  }
-
-  const SnackbarContent = () => {
-    return (
-      <div className="text-white font-medium text-[14px] vsm:text-[15px] px-[16px] rounded py-[5px] vsm:py-[6px] text-center">
-        {`"${email}" copied to your clipboard`}
-      </div>
-    );
   };
   const options = [
     {
@@ -106,16 +74,26 @@ const BuyApepe = () => {
               <p className="text-white-main/70 text-[20px] leading-[28px] font-semibold">
                 Contract Details
               </p>
-              <div className="h-[46px] w-full lg:w-auto flex items-center lg:justify-start justify-between gap-4 px-4 rounded-[8px] bg-white-main/50">
-                <p className="text-white-main/80 text-[18px] font-medium">
-                  0x98a2500a2c3b8877b0ed5ac3acc300c50bf7064b
-                </p>
-                <Tooltip title="Copy" content="Copy" arrow placement="top">
-                  <FaCopy className="text-white-main/80 h-[20px] w-[20px] cursor-pointer" />
-                </Tooltip>
-              </div>
-              <div className="w-full flex sm:flex-row flex-col gap-6 items-center justify-start">
-                <button className="h-[46px] sm:w-[200px] w-full flex items-center justify-center gap-2 bg-white-main/50 rounded-[8px] text-white-main/80 text-[18px] font-medium">
+              <Tooltip title={copied ? "Copied" : "Copy"} arrow placement="top">
+                <div
+                  onClick={copyToClipboard}
+                  className="h-[46px] w-full lg:w-auto flex items-center lg:justify-start justify-between gap-4 px-4 rounded-[8px] bg-white-main/50 cursor-pointer"
+                >
+                  <p className="text-white-main/80 text-[18px] font-medium sm:inline-block hidden">
+                    0x98a2500a2c3b8877b0ed5ac3acc300c50bf7064b
+                  </p>
+                  <p className="text-white-main/80 text-[18px] font-medium sm:hidden inline-block">
+                    0x98a2...c3acc300c50bf7064b
+                  </p>
+                  {copied ? (
+                    <BsCheck2 className="text-white-main/80 h-[20px] w-[20px]" />
+                  ) : (
+                    <FaCopy className="text-white-main/80 h-[20px] w-[20px]" />
+                  )}
+                </div>
+              </Tooltip>
+              <div className="w-full flex sm:flex-row flex-col gap-6 items-center justify-start sm:justify-between lg:justify-start">
+                <button className="h-[46px] sm:w-[220px] w-full flex items-center justify-center gap-2 bg-white-main/50 rounded-[8px] text-white-main/80 text-[18px] font-medium">
                   {" "}
                   <FaWallet className="h-[20px] w-[20px]" />
                   Add to MetaMask
@@ -126,18 +104,10 @@ const BuyApepe = () => {
                   Buy on Pcs
                 </button>
               </div>
-              {/* <Snackbar
-                className="bg-black text-white text-[13px]  rounded-[3px]"
-                anchorOrigin={{ horizontal: "center", vertical: "bottom" }}
-                open={openSnackbar}
-                onClose={handleCloseSnackbar}
-                message={<SnackbarContent />}
-                autoHideDuration={2000}
-              /> */}
             </div>
-            <div className="w-full flex items-start justify-center">
+            <div className="w-full flex items-start justify-start">
               <iframe
-                width="400"
+                width="100%"
                 height="720"
                 frameborder="0"
                 allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"

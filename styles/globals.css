@@ -175,23 +175,6 @@ canvas {
   padding: 0px 8px !important;
 }
 
-/*Material UI Toottip styling  */
-.MuiTooltip-popper[data-popper-placement*="top"] .MuiTooltip-tooltip {
-  margin-bottom: -4px !important;
-}
-
-.MuiTooltip-tooltip {
-  max-width: none !important;
-  background-color: black !important;
-  border-color: black !important;
-  padding: 0px !important;
-  outline: none !important;
-}
-
-.MuiTooltip-arrow {
-  color: black !important;
-}
-
 @keyframes fillText {
   to {
     width: 100%;
