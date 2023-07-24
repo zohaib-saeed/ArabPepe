@@ -2,7 +2,6 @@ import React from "react";
 import Text from "../shared/Typography/Text";
 import { TbSquareRoundedChevronRightFilled } from "react-icons/tb";
 
- 
 const MapCard = ({ options, title }) => {
   return (
     <div className="md:h-[320px] sm:h-[360px]  h-[460px] w-full border-2 rounded-tr-[40px] rounded-bl-[40px] border-white-main sm:p-3 p-[10px] m-auto">
@@ -16,10 +15,10 @@ const MapCard = ({ options, title }) => {
                 className="w-full flex items-start justify-start gap-2"
               >
                 <div className="shrink-0">
-                <TbSquareRoundedChevronRightFilled className="text-white-main h-[20px] w-[20px] mt-1" />
+                  <TbSquareRoundedChevronRightFilled className="text-white-main h-[20px] w-[20px] mt-1" />
                 </div>
-                
-                <Text text={item} />
+
+                <Text text={item} additionalStyles="!text-left" />
               </div>
             );
           })}
