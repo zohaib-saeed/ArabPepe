@@ -15,7 +15,7 @@ const TradingChart = () => {
             title="GeckoTerminal Embed"
             src="https://www.geckoterminal.com/bsc/pools/0xc47672cd8f50ae03156684cb523b1ed4bb349f2f?embed=1&info=1&swaps=1"
             allow="clipboard-write"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>

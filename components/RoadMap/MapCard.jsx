@@ -13,10 +13,10 @@ const MapCard = ({ options, title }) => {
             return (
               <div
                 key={index}
-                className="w-full flex items-center justify-start gap-2"
+                className="w-full flex items-start justify-start gap-2"
               >
                 <div className="shrink-0">
-                <TbSquareRoundedChevronRightFilled className="text-white-main h-[20px] w-[20px]" />
+                <TbSquareRoundedChevronRightFilled className="text-white-main h-[20px] w-[20px] mt-1" />
                 </div>
                 
                 <Text text={item} />
